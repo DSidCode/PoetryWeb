@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poemario - Daniel Sid Garcia Alzate</title>
+    <title>Del Amor Y Otras Nostalgias</title>
     <!-- Se mantiene el enlace a Font Awesome, ya que es el framework que usaremos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
@@ -95,6 +95,12 @@
             margin: 0 0 0.5rem;
             font-size: 0.95rem;
             color: #555;
+        }
+        .italic-font
+        {
+            font-style: italic;
+            font-weight: 300;
+            color: #444;
         }
         
         .main-nav {
@@ -460,13 +466,13 @@
 </head>
 <body>
     <header>
-        <h1>Antología</h1>
+        <h1 class="italic-font">Antología</h1>
         <h1>Del Amor Y Otras Nostalgias</h1>
-        <p>Un poema por página · Lectura minimalista</p>
+        <p>Escribo para no perderme en los laberintos de mi propia mente.</p>
         <nav class="main-nav flex-center">
-            <a class="pill" href="#indice" id="btn-inicio">Inicio</a>
+            <a class="pill" href="#indice" id="btn-inicio">Índice</a>
             <a class="pill" href="#bio">Autobiografía</a>
-            <a class="pill" href="#apoyo">Apoya al autor</a>
+            <a class="pill" href="#apoyo">Apóyame</a>
             <a class="pill" href="mailto:danisid@email.com">Escríbeme</a>
         </nav>
     </header>
@@ -477,47 +483,104 @@
             <div class="indice-intro">
                 <h2>Índice</h2>
                 <p>
-                    Aquí comienza el susurro de los versos que habitan en estas páginas. Haz clic en el título para empezar a leer.
+                    Aquí comienza el susurro de los versos que habitan en estas páginas. 
+                    <br>
+                    Clic en el título para empezar a leer.
                 </p>
             </div>
             
             <ul class="indice-list">
-                <li><a href="#poema-1" class="indice-link" data-target="1">Conejo Blanco</a></li>
-                <li><a href="#poema-2" class="indice-link" data-target="2">Sed de ti</a></li>
+                <li><a href="#intro" class="indice-link" data-target="1">Introducción</a></li>
+                <li><a href="#poema-1" class="indice-link" data-target="2">Conejo Blanco</a></li>
+                <li><a href="#poema-2" class="indice-link" data-target="3">Sed de ti</a></li>
                 <!-- Agrega más poemas aquí -->
             </ul>
         </section>
 
         <!-- Páginas de poemas -->
-        <section class="page" id="poema-1" data-title="Conejo Blanco" data-index="1">
+          <section class="page" id="intro" data-title="Introduccion" data-index="1">
             <div>
-                <h2>Conejo Blanco</h2>
+                <h2></h2>
                 <p>
-                    Llegas tarde como de costumbre -me dijo-… La noche anterior había llamado pero no fue muy prudente hablar en ese momento, esta mañana el teléfono sonó para despertarme, habíamos tenido pesadillas en lo que va corrido de las últimas noches y esta era una de las razones para llegar a su habitación y contemplar el conejo blanco que por fin había enjaulado, cosa que me aterro profundamente, y que para ella se convertía en una sonrisa pícara dibujada en su rostro, yo preferí omitir el descaro para recostarme con la mirada perdida en el techo, hasta que sus ojos inquietantes por fin me cuestionaron acerca de mis pensamientos,  esto siempre me detenía en un rápido análisis sobre lo que ella debería saber y lo que yo debería omitir y olvidar para mi salud mental… deshice pequeñas cadenas y ataduras en mi lengua, contraje el espacio entre nuestras miradas mientras sentía el temblor en todo mi cuerpo y sentir de nuevo su caricia angelical, aquellas que tantas veces he buscado en otras manos tan torpes y de buenas intenciones que a duras penas si llego a entender que es una caricia. Ella no, ella lo hace con el alma y sabe llegar hasta la mía y como diría Oliverio Gironda, después de conocer una mujer etérea, ¿puede brindarnos alguna clase de atractivos una mujer terrestre?
+                    Si escribo lo que siento es porque así disminuyo la fiebre de sentir. Lo que confieso no tiene importancia, pues nada tiene importancia. Hago paisajes con lo que siento. Hago fiestas de las sensaciones.
+                    <br><br>
+                    (libro del desasosiego- Fernando Pessoa)
                 </p>
             </div>
             <div class="pager">
                 <a href="#indice" class="nav-link prev" data-prev="0"><span aria-hidden="true">←</span> Volver al índice</a>
-                <span class="page-counter">Página 1 de 2</span>
-                <a href="#poema-2" class="nav-link next" data-next="2">Siguiente <span aria-hidden="true">→</span></a>
+                <span class="page-counter">Página 1 de 3</span>
+                <a href="#poema-1" class="nav-link next" data-next="2">Siguiente <span aria-hidden="true">→</span></a>
             </div>
         </section>
-
-        <section class="page" id="poema-2" data-title="Sed de ti" data-index="2">
+        <section class="page" id="poema-1" data-title="Conejo Blanco" data-index="2">
             <div>
-                <h2>Sed de ti</h2>
+                <h2>Conejo Blanco</h2>
                 <p>
-                    Porque tengo se de ti y de tu cuerpo cálido, tengo se de tus labios y tus senos, tengo se de tu mirada y tu respiración, de esas noches que no han llegado y que no se si llegarán, tengo sed de nuestros silencios abrazados, de nuestras caricias interminables y de esos besos profundos por todo el cuerpo, de esas tardes mirando puestas de sol, de esos días de lluvia caminando tomados de la mano, de esos momentos sin hacer nada o simplemente comiendo helado, viendo una película y en algunas ocasiones no verla, tengo sed de reírnos por bobadas y de nuestros juegos tontos que solo nosotros entendemos, tengo sed de todos esos momentos, tengo sed de tus tristezas, de tus alegrías, de tu alas, de tu calor, tengo sed de tu cuerpo ansioso, tengo se de ti… Mujer de mi media noche.
+                    Llegas tarde como de costumbre -me dijo-…
+                    <br><br>
+                    La noche anterior había llamado pero no fue muy prudente hablar en ese momento, <br>
+                    esta mañana el teléfono sonó para despertarme, <br>
+                    habíamos tenido pesadillas en lo que va corrido de las últimas noches <br>
+                    y esta era una de las razones para llegar a su habitación <br>
+                    y contemplar el conejo blanco que por fin había enjaulado, <br>
+                    cosa que me aterro profundamente, <br>
+                    y que para ella se convertía en una sonrisa pícara dibujada en su rostro.
+                    <br><br>
+                    Yo preferí omitir el descaro para recostarme con la mirada perdida en el techo, <br>
+                    hasta que sus ojos inquietantes por fin me cuestionaron acerca de mis pensamientos. <br>
+                    Esto siempre me detenía en un rápido análisis sobre lo que ella debería saber <br>
+                    y lo que yo debería omitir y olvidar para mi salud mental…
+                    <br><br>
+                    Deshice pequeñas cadenas y ataduras en mi lengua, <br>
+                    contraje el espacio entre nuestras miradas mientras sentía el temblor en todo mi cuerpo <br>
+                    y sentí de nuevo su caricia angelical, <br>
+                    aquellas que tantas veces he buscado en otras manos tan torpes y de buenas intenciones <br>
+                    que a duras penas si llego a entender que es una caricia.
+                    <br><br>
+                    Ella no, ella lo hace con el alma y sabe llegar hasta la mía y como diría Oliverio Gironda, <br>
+                    después de conocer una mujer etérea, <br>
+                    ¿puede brindarnos alguna clase de atractivos una mujer terrestre?
                 </p>
             </div>
             <div class="pager">
-                <a href="#poema-1" class="nav-link prev" data-prev="1"><span aria-hidden="true">←</span> Anterior</a>
-                <span class="page-counter">Página 2 de 2</span>
+                <a href="#intro" class="nav-link prev" data-prev="1"><span aria-hidden="true">←</span> Anterior</a>
+                <span class="page-counter">Página 2 de 3</span>
+                <a href="#poema-2" class="nav-link next" data-next="3">Siguiente <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section class="page" id="poema-2" data-title="Sed de ti" data-index="3">
+            <div>
+                <h2>Sed de ti</h2>
+                <p>
+                    Porque tengo sed de ti y de tu cuerpo cálido, <br>
+                    tengo sed de tus labios y tus senos, <br>
+                    tengo sed de tu mirada y tu respiración, <br>
+                    de esas noches que no han llegado y que no sé si llegarán.
+                    <br><br>
+                    Tengo sed de nuestros silencios abrazados, <br>
+                    de nuestras caricias interminables y de esos besos profundos por todo el cuerpo, <br>
+                    de esas tardes mirando puestas de sol, <br>
+                    de esos días de lluvia caminando tomados de la mano, <br>
+                    de esos momentos sin hacer nada o simplemente comiendo helado, <br>
+                    viendo una película y en algunas ocasiones no verla.
+                    <br><br>
+                    Tengo sed de reírnos por bobadas y de nuestros juegos tontos que solo nosotros entendemos, <br>
+                    tengo sed de todos esos momentos, <br>
+                    tengo sed de tus tristezas, de tus alegrías, de tus alas, de tu calor, <br>
+                    tengo sed de tu cuerpo ansioso, <br>
+                    tengo sed de ti… Mujer de mi media noche.
+                </p>
+            </div>
+            <div class="pager">
+                <a href="#poema-1" class="nav-link prev" data-prev="2"><span aria-hidden="true">←</span> Anterior</a>
+                <span class="page-counter">Página 3 de 3</span>
             </div>
         </section>
         
         <!-- Sección de autobiografía (placeholder) -->
-        <section class="page" id="bio" data-title="Autobiografía" data-index="3">
+        <section class="page" id="bio" data-title="Autobiografía" data-index="4">
             <div>
                 <h2>Autobiografía</h2>
                 <p>Aquí aparecerá la autobiografía del autor.</p>
@@ -528,7 +591,7 @@
         </section>
         
         <!-- Nueva sección de apoyo -->
-        <section class="page" id="apoyo" data-title="Apoya al autor" data-index="4">
+        <section class="page" id="apoyo" data-title="Apoya al autor" data-index="5">
             <div>
                 <h2>Apoya al autor</h2>
                 <p>
@@ -586,6 +649,8 @@
             const shareX = document.getElementById('share-x');
             const shareFb = document.getElementById('share-fb');
             const btnInicio = document.getElementById('btn-inicio');
+            const bookContentPages = pages.filter(p => p.classList.contains('page') && !['bio', 'apoyo'].includes(p.id));
+            const totalBookPages = bookContentPages.length;
             let currentPageIndex = 0;
             
             function preloadNextPage() {
@@ -618,10 +683,12 @@
             }
             
             function updatePageCounter() {
-                const pageNumber = currentPageIndex > 0 ? currentPageIndex : 1;
-                const totalPages = pages.length - 1;
+                const activePage = pages[currentPageIndex];
+                const bookPageIndex = bookContentPages.indexOf(activePage);
                 document.querySelectorAll('.page-counter').forEach(counter => {
-                    counter.textContent = `Página ${pageNumber} de ${totalPages}`;
+                    if (bookPageIndex !== -1) {
+                        counter.textContent = `Página ${bookPageIndex + 1} de ${totalBookPages}`;
+                    }
                 });
             }
 

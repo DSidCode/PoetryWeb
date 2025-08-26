@@ -177,6 +177,18 @@
             hyphens: auto;
         }
 
+        /* Poem specific styles */
+        .poem-columns {
+            columns: 2;
+            column-gap: 2.5rem;
+            text-align: left;
+        }
+
+        .poem-columns p {
+            break-inside: avoid-column;
+            margin-bottom: 1.2em !important; /* Ensure stanza spacing */
+        }
+
         /* Pager */
         .pager {
             display: flex;
@@ -407,6 +419,10 @@
                 columns: 1;
             }
             
+            .poem-columns {
+                columns: 1;
+            }
+
             .pager {
                 flex-direction: column;
                 gap: 1rem;
@@ -493,6 +509,7 @@
                 <li><a href="#intro" class="indice-link" data-target="1">Introducción</a></li>
                 <li><a href="#poema-1" class="indice-link" data-target="2">Conejo Blanco</a></li>
                 <li><a href="#poema-2" class="indice-link" data-target="3">Sed de ti</a></li>
+                <li><a href="#poema-3" class="indice-link" data-target="4">Aquí me tienes</a></li>
                 <!-- Agrega más poemas aquí -->
             </ul>
         </section>
@@ -509,7 +526,7 @@
             </div>
             <div class="pager">
                 <a href="#indice" class="nav-link prev" data-prev="0"><span aria-hidden="true">←</span> Volver al índice</a>
-                <span class="page-counter">Página 1 de 3</span>
+                <span class="page-counter">Página 1 de 4</span>
                 <a href="#poema-1" class="nav-link next" data-next="2">Siguiente <span aria-hidden="true">→</span></a>
             </div>
         </section>
@@ -545,7 +562,7 @@
             </div>
             <div class="pager">
                 <a href="#intro" class="nav-link prev" data-prev="1"><span aria-hidden="true">←</span> Anterior</a>
-                <span class="page-counter">Página 2 de 3</span>
+                <span class="page-counter">Página 2 de 4</span>
                 <a href="#poema-2" class="nav-link next" data-next="3">Siguiente <span aria-hidden="true">→</span></a>
             </div>
         </section>
@@ -575,12 +592,102 @@
             </div>
             <div class="pager">
                 <a href="#poema-1" class="nav-link prev" data-prev="2"><span aria-hidden="true">←</span> Anterior</a>
-                <span class="page-counter">Página 3 de 3</span>
+                <span class="page-counter">Página 3 de 4</span>
+                <a href="#poema-3" class="nav-link next" data-next="4">Siguiente <span aria-hidden="true">→</span></a>
             </div>
         </section>
-        
+
+        <section class="page" id="poema-3" data-title="Aquí me tienes" data-index="4">
+            <div>
+                <h2>Aquí me tienes</h2>
+                <div class="poem-columns">
+                    <p>
+                        Aquí me tienes,<br>
+                        buscando palabras para ti,<br>
+                        letras profanas que persigo incansablemente<br>
+                        en el rincón de mi memoria,<br>
+                        en libros leídos<br>
+                        y sentimientos perdidos.
+                    </p>
+                    <p>
+                        Un mundo quisiera crear,<br>
+                        uno solo para los dos<br>
+                        y para nadie más.
+                    </p>
+                    <p>
+                        Trato de entender lo que pienso<br>
+                        y lo que siento,<br>
+                        pero no hallo respuesta.
+                    </p>
+                    <p>
+                        Me canso de ser lo que soy,<br>
+                        quiero dar,<br>
+                        y no recibo nada.
+                    </p>
+                    <p>
+                        Me canso de mí mismo,<br>
+                        de esta sed que no calma<br>
+                        ninguna bebida.
+                    </p>
+                    <p>
+                        Quisiera beber la miel de tus labios,<br>
+                        el néctar dulce de tu piel.
+                    </p>
+                    <p>
+                        Pero no…<br>
+                        aquí me encuentro otra vez,<br>
+                        en medio de la noche,<br>
+                        queriendo estar contigo,<br>
+                        y aún sigo solo.
+                    </p>
+                    <p>
+                        Porque el quererte y desearte tanto<br>
+                        es insuficiente.<br>
+                        No basta con pasarme la vida<br>
+                        pensando en ti,
+                    </p>
+                    <p>
+                        no es suficiente mi tristeza,<br>
+                        mi melancolía de no tenerte,<br>
+                        ni es suficiente desgarrar mi alma<br>
+                        y plasmarla en papel.
+                    </p>
+                    <p>
+                        Este sentimiento indescifrable,<br>
+                        imposible de escribir,<br>
+                        cuyas palabras aún no existen,<br>
+                        pertenece a lo más recóndito del corazón,<br>
+                        a lo inalcanzable.
+                    </p>
+                    <p>
+                        A veces siento miedo<br>
+                        de esto que soy,<br>
+                        miedo de mí mismo,<br>
+                        de que tal vez pertenezca<br>
+                        a otro lugar,<br>
+                        a una vida que no fue la mía.
+                    </p>
+                    <p>
+                        Y de qué me sirve escribirte<br>
+                        si no consigo tu corazón,<br>
+                        si no extingo estos sentimientos<br>
+                        indescifrables,<br>
+                        intensos<br>
+                        y, al parecer…
+                    </p>
+                    <p>
+                        eternos.
+                    </p>
+                </div>
+            </div>
+            <div class="pager">
+                <a href="#poema-2" class="nav-link prev" data-prev="3"><span aria-hidden="true">←</span> Anterior</a>
+                <span class="page-counter">Página 4 de 4</span>
+            </div>
+        </section>
+
         <!-- Sección de autobiografía (placeholder) -->
-        <section class="page" id="bio" data-title="Autobiografía" data-index="4">
+        <section class="page" id="bio" data-title="Autobiografía" data-index="5">
             <div>
                 <h2>Autobiografía</h2>
                 <p>Aquí aparecerá la autobiografía del autor.</p>
@@ -591,11 +698,12 @@
         </section>
         
         <!-- Nueva sección de apoyo -->
-        <section class="page" id="apoyo" data-title="Apoya al autor" data-index="5">
+        <section class="page" id="apoyo" data-title="Apoya al autor" data-index="6">
             <div>
                 <h2>Apoya al autor</h2>
                 <p>
-                    Si te gusta el contenido que creo, puedes mostrar tu apoyo a través de una pequeña contribución económica. Tu ayuda me permite seguir escribiendo, explorando nuevas ideas y compartiendo mi arte contigo.
+                    Si te gusta el contenido que creo, puedes mostrar tu apoyo a través de una pequeña contribución económica. <br>
+                    Tu ayuda me permite seguir escribiendo, explorando nuevas ideas y compartiendo mi arte contigo.
                 </p>
                 <p>
                     También puedes seguirme en redes sociales para estar al tanto de mis últimos poemas, reflexiones y novedades.
